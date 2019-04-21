@@ -30,9 +30,89 @@
         <div class="wt_wrapper">
             <div class="mui-scroll-wrapper" id="refreshContainer">
                 <div class="mui-scroll">
+                    <ul class="mui-table-view">
 
 
-                </div>
+                    <li class="mui-table-view-cell mui-media">
+                        <div class="mui-slider-right mui-disabled">
+                            <a class="mui-btn mui-btn-primary" data-id="7" data-num="10" data-productnum="20">编辑</a>
+                            <a class="mui-btn mui-btn-danger" data-id="7">删除</a>
+                        </div>
+                        <a href="javascript:;" class="mui-slider-handle mui-navigate-right">
+                            <img class="mui-media-object mui-pull-left" src="../images/nav1.png">
+                            <div class="mui-media-body">
+                                <p class="name">李宁闪击篮球鞋驭帅10镭射队尚4男韦德之道空袭中高帮队尚3.5球鞋</p>
+                                <p class="info">
+                                    <span class="price">￥499.1</span>
+                                    <span class="oldPrice">￥888.1</span>
+                                    <span class="number">x10</span>
+                                </p>
+                            </div>
+                            <input type="checkbox" data-num="10" data-price="499.1">
+                        </a>
+                    </li>
+
+
+                    <li class="mui-table-view-cell mui-media">
+                        <div class="mui-slider-right mui-disabled">
+                            <a class="mui-btn mui-btn-primary" data-id="8" data-num="2" data-productnum="20">编辑</a>
+                            <a class="mui-btn mui-btn-danger" data-id="8">删除</a>
+                        </div>
+                        <a href="javascript:;" class="mui-slider-handle mui-navigate-right">
+                            <img class="mui-media-object mui-pull-left" src="../images/nav1.png">
+                            <div class="mui-media-body">
+                                <p class="name">Sport飓风 Nike Kwazi 休闲运动鞋男 844839-002-001-100-400</p>
+                                <p class="info">
+                                    <span class="price">￥499.1</span>
+                                    <span class="oldPrice">￥888.1</span>
+                                    <span class="number">x2</span>
+                                </p>
+                            </div>
+                            <input type="checkbox" data-num="2" data-price="499.1">
+                        </a>
+                    </li>
+
+
+                    <li class="mui-table-view-cell mui-media">
+                        <div class="mui-slider-right mui-disabled">
+                            <a class="mui-btn mui-btn-primary" data-id="9" data-num="4" data-productnum="20">编辑</a>
+                            <a class="mui-btn mui-btn-danger" data-id="9">删除</a>
+                        </div>
+                        <a href="javascript:;" class="mui-slider-handle mui-navigate-right">
+                            <img class="mui-media-object mui-pull-left" src="../images/nav1.png">
+                            <div class="mui-media-body">
+                                <p class="name">匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>
+                                <p class="info">
+                                    <span class="price">￥499.1</span>
+                                    <span class="oldPrice">￥888.1</span>
+                                    <span class="number">x4</span>
+                                </p>
+                            </div>
+                            <input type="checkbox" data-num="4" data-price="499.1">
+                        </a>
+                    </li>
+
+
+                    <li class="mui-table-view-cell mui-media">
+                        <div class="mui-slider-right mui-disabled">
+                            <a class="mui-btn mui-btn-primary" data-id="10" data-num="3" data-productnum="20">编辑</a>
+                            <a class="mui-btn mui-btn-danger" data-id="10">删除</a>
+                        </div>
+                        <a href="javascript:;" class="mui-slider-handle mui-navigate-right">
+                            <img class="mui-media-object mui-pull-left" src="../images/nav1.png">
+                            <div class="mui-media-body">
+                                <p class="name">指南针运动 NIKE HYPERSHIFT篮球鞋 844392-010-607-164-017现货</p>
+                                <p class="info">
+                                    <span class="price">￥499.1</span>
+                                    <span class="oldPrice">￥888.1</span>
+                                    <span class="number">x3</span>
+                                </p>
+                            </div>
+                            <input type="checkbox" data-num="3" data-price="499.1">
+                        </a>
+                    </li>
+
+                </ul></div>
             </div>
         </div>
     </div>
@@ -75,7 +155,13 @@
 </script>
 <script type="text/template" id="edit">
 
-    <div class="p_size">
+
+    <div class="amount">
+        数量：<button class="minus">-</button><input type="text" value="<%=num%>" data-max="<%=productnum%>"><button class="plus">+</button>
+        剩余：<%=productnum%> 件
+    </div>
+</script>
+<!--<div class="p_size">
         尺码：
         <%
             var itemArr = productsize.split('-');
@@ -85,12 +171,7 @@
         <% for(var i = start; i <= end ; i++){ %>
         <span class="<%=i==size?'now':''%>"><%=i%></span>
         <% } %>
-    </div>
-    <div class="amount">
-        数量：<button class="minus">-</button><input type="text" value="<%=num%>" data-max="<%=productnum%>"><button class="plus">+</button>
-        剩余：<%=productnum%> 件
-    </div>
-</script>
+    </div>-->
 <script src="../res/mui/js/mui.min.js"></script>
 <script src="../res/artTemplate/template-native.js"></script>
 <script src="../res/zepto/zepto.min.js"></script>
