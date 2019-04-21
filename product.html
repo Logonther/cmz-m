@@ -29,17 +29,64 @@
         <div class="wt_wrapper">
             <div class="mui-scroll-wrapper">
                 <div class="mui-scroll">
+                    <!-- TODO -->
 
+                    <div class="mui-slider">
+                        <div class="mui-slider-group mui-slider-loop">
+                            <div class="mui-slider-item mui-slider-item-duplicate">
+                                <a href="#"><img src="images/nav2.png"></a>
+                            </div>
+
+                            <div class="mui-slider-item">
+                                <a href="#"><img src="images/nav1.png"></a>
+                            </div>
+
+                            <div class="mui-slider-item mui-active">
+                                <a href="#"><img src="images/nav2.png"></a>
+                            </div>
+
+                            <div class="mui-slider-item mui-slider-item-duplicate">
+                                <a href="#"><img src="images/nav1.png"></a>
+                            </div>
+                        </div>
+                        <div class="mui-slider-indicator">
+                            <div class="mui-indicator mui-active"></div>
+                            <div class="mui-indicator"></div>
+                        </div>
+                    </div>
+                    <!--标题-->
+                    <div class="title">匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</div>
+                    <!--价格-->
+                    <div class="price">
+                        价格： <span class="nowPrice">499.1 </span>
+                        <span class="oldPrice">888.1</span>
+                    </div>
+                    <!--数量-->
+                    <div class="amount">
+                        数量：
+                        <button class="minus">-</button>
+                        <input type="text" value="0">
+                        <button class="plus">+</button>
+                        剩余：<span>20</span> 件
+                    </div>
+                    <!--详情-->
+                    <div class="info">
+                        <img src="images/nav1.png">
+                        <img src="images/nav1.png">
+                        <img src="images/nav1.png">
+                        <img src="images/nav1.png">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--底部-->
-    <footer class="product_footer">
-        <a href="#" class="fa fa-shopping-cart toCart"></a>
-        <a href="javascript:;" class="add">加入购物车</a>
-        <a href="javascript:;" class="buy">立即购买</a>
-    </footer>
+</div>
+<!--底部-->
+<footer class="product_footer">
+    <a href="#" class="fa fa-shopping-cart toCart"></a>
+    <a href="javascript:;" class="add">加入购物车</a>
+    <a href="javascript:;" class="buy">立即购买</a>
+</footer>
 </div>
 
 <script type="text/template" id="detail">
@@ -75,17 +122,20 @@
     <div class="size">
         尺码：
         <%
-            var arr = ( size ||'40-50').split('-');
-            var start = arr[0] ;
-            var end = arr[1];
-            for(var i = start ;i <= end ; i++){
+        var arr = ( size ||'40-50').split('-');
+        var start = arr[0] ;
+        var end = arr[1];
+        for(var i = start ;i <= end ; i++){
         %>
         <span><%=i%></span>
         <% } %>
     </div>
     <!--数量-->
     <div class="amount">
-        数量：<button class="minus">-</button><input type="text" value="0"><button class="plus">+</button>
+        数量：
+        <button class="minus">-</button>
+        <input type="text" value="0">
+        <button class="plus">+</button>
         剩余：<span><%=num%></span> 件
     </div>
 </script>
