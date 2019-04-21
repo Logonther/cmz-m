@@ -64,6 +64,24 @@
 .wt_container .wt_content .wt_wrapper .brand>img{
     width: 100%;
 }
+.wt_container .wt_content .wt_wrapper .brand .title{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 65px;
+    padding: 12px;
+}
+.wt_container .wt_content .wt_wrapper .brand .title .cn{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+.wt_container .wt_content .wt_wrapper .brand .title .en{
+    font-size: 12px;
+    color: white;
+    margin: 0;
+}
 .wt_container .wt_content .wt_wrapper .brand>a{
     display: block;
     width: 25%;
@@ -76,6 +94,24 @@
 .wt_container .wt_content .wt_wrapper .live{
     padding: 0 10px;
     margin-bottom: 10px;
+}
+.wt_container .wt_content .wt_wrapper .live .title{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 65px;
+    padding: 12px;
+}
+.wt_container .wt_content .wt_wrapper .live .title .cn{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+.wt_container .wt_content .wt_wrapper .live .title .en{
+    font-size: 12px;
+    color: white;
+    margin: 0;
 }
 .wt_container .wt_content .wt_wrapper .live>img{
     width: 100%;
