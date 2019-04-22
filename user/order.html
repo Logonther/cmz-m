@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ios是否创建快捷启动方式-->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!--ios顶部通栏的样式 黑色-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!--遇到数字禁止转化成电话号码的格式-->
+    <meta content="telephone=no" name="format-detection">
+    <title>个人中心</title>
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="../res/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../res/mui/css/mui.min.css"/>
+    <link rel="stylesheet" href="../res/fontAwesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/user/order.css"/>
+</head>
+<body>
+<div class="wt_container">
+    <!--头部-->
+    <header class="wt_header">
+        <a href="javascript:history.back();" class="fa fa-arrow-left"></a>
+        <h3>订单管理</h3>
+    </header>
+    <!--内容-->
+    <div class="wt_content">
+        <div class="wt_wrapper">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!--这里放置真实显示的DOM内容-->
+                    <nav class="orderNav mui-row">
+                        <div class="myOrder mui-col-xs-6">
+                            <a href="#">
+                                <i class="fa fa-list"></i>
+                                <p>我的订单</p>
+                            </a>
+                        </div>
+                        <div class="approve mui-col-xs-6">
+                            <a href="#">
+                                <i class="fa fa-pencil-square-o"></i>
+                                <p>我的审批单</p>
+                            </a>
+                        </div>
+                    </nav>
+                    <div style="padding: 10px">
+                        <div id="segmentedControl" class="mui-segmented-control mui-segmented-control-primary">
+                            <a class="mui-control-item mui-active" href="#ordertype1">
+                                所有订单
+                            </a>
+                            <a class="mui-control-item" href="#ordertype2">
+                                待审批
+                            </a>
+                            <a class="mui-control-item" href="#ordertype3">
+                                待发货
+                            </a>
+                            <a class="mui-control-item" href="#ordertype4">
+                                待收货
+                            </a>
+                            <a class="mui-control-item" href="#ordertype5">
+                                已完成
+                            </a>
+                            <a class="mui-control-item" href="#ordertype6">
+                                已关闭
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mui-content-padded">
+                        <div id="ordertype1" class="mui-control-content mui-active">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <td>商品</td>
+                                    <td>单价</td>
+                                    <td>数量</td>
+                                    <td>合计</td>
+                                </tr>
+                                </thead>
+
+                                <tbody class="hr">
+                                <tr></tr>
+                                </tbody>
+                                <tbody class="order">
+                                <tr class="order-content">
+                                    <td colspan="4">
+                                        <span class="orderID">订单ID：<span>2019020212345678</span></span>
+                                        <span class="address">收货信息：<span title="李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部">李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部</span></span>
+                                        <span class="orderPrice">订单总价：￥<span>276.00</span></span>
+                                        <span class="orderStatus">订单状态：<span>待审批</span></span>
+                                    </td>
+                                </tr>
+                                <tr class="order-good">
+                                    <td>
+                                        <div class="good">
+                                            <div class="goodPic">
+                                                <img src="images/head%20portrait.jpg">
+                                            </div>
+                                            <div class="goodInfo">
+                                                <div>
+                                                    <div class="goodName"><a href="javascript:void(0)">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">138.00</td>
+                                    <td class="amount">1</td>
+                                    <td class="goodPrice">138.00</td>
+                                </tr>
+                                <tr class="order-good">
+                                    <td>
+                                        <div class="good">
+                                            <div class="goodPic">
+                                                <img src="images/head%20portrait.jpg">
+                                            </div>
+                                            <div class="goodInfo">
+                                                <div>
+                                                    <div class="goodName"><a href="javascript:void(0)">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">138.00</td>
+                                    <td class="amount">1</td>
+                                    <td class="goodPrice">138.00</td>
+                                </tr>
+                                </tbody>
+
+                                <tbody class="hr">
+                                <tr></tr>
+                                </tbody>
+                                <tbody class="order">
+                                <tr class="order-content">
+                                    <td colspan="4">
+                                        <span class="orderID">订单ID：<span>2019020212345678</span></span>
+                                        <span class="address">收货信息：<span title="李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部">李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部</span></span>
+                                        <span class="orderPrice">订单总价：￥<span>276.00</span></span>
+                                        <span class="orderStatus">订单状态：<span>待发货</span></span>
+                                    </td>
+                                </tr>
+                                <tr class="order-good">
+                                    <td>
+                                        <div class="good">
+                                            <div class="goodPic">
+                                                <img src="images/head%20portrait.jpg">
+                                            </div>
+                                            <div class="goodInfo">
+                                                <div>
+                                                    <div class="goodName"><a href="javascript:void(0)">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">138.00</td>
+                                    <td class="amount">1</td>
+                                    <td class="goodPrice">138.00</td>
+                                </tr>
+                                <tr class="order-good">
+                                    <td>
+                                        <div class="good">
+                                            <div class="goodPic">
+                                                <img src="images/head%20portrait.jpg">
+                                            </div>
+                                            <div class="goodInfo">
+                                                <div>
+                                                    <div class="goodName"><a href="javascript:void(0)">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">138.00</td>
+                                    <td class="amount">1</td>
+                                    <td class="goodPrice">138.00</td>
+                                </tr>
+                                </tbody>
+
+                                <tbody class="hr">
+                                <tr></tr>
+                                </tbody>
+                                <tbody class="order">
+                                <tr class="order-content">
+                                    <td colspan="4">
+                                        <span class="orderID">订单ID：<span>2019020212345678</span></span>
+                                        <span class="address">收货信息：<span title="李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部">李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部</span></span>
+                                        <span class="orderPrice">订单总价：￥<span>276.00</span></span>
+                                        <span class="orderStatus">订单状态：<span>待收货</span></span>
+                                    </td>
+                                </tr>
+                                <tr class="order-good">
+                                    <td>
+                                        <div class="good">
+                                            <div class="goodPic">
+                                                <img src="images/head%20portrait.jpg">
+                                            </div>
+                                            <div class="goodInfo">
+                                                <div>
+                                                    <div class="goodName"><a href="javascript:void(0)">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">138.00</td>
+                                    <td class="amount">1</td>
+                                    <td class="goodPrice">138.00</td>
+                                </tr>
+                                <tr class="order-good">
+                                    <td>
+                                        <div class="good">
+                                            <div class="goodPic">
+                                                <img src="images/head%20portrait.jpg">
+                                            </div>
+                                            <div class="goodInfo">
+                                                <div>
+                                                    <div class="goodName"><a href="javascript:void(0)">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">138.00</td>
+                                    <td class="amount">1</td>
+                                    <td class="goodPrice">138.00</td>
+                                </tr>
+                                </tbody>
+
+                                <tbody class="hr">
+                                <tr></tr>
+                                </tbody>
+                                <tbody class="order">
+                                <tr class="order-content">
+                                    <td colspan="4">
+                                        <span class="orderID">订单ID：<span>2019020212345678</span></span>
+                                        <span class="address">收货信息：<span title="李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部">李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部</span></span>
+                                        <span class="orderPrice">订单总价：￥<span>276.00</span></span>
+                                        <span class="orderStatus">订单状态：<span>已完成</span></span>
+                                    </td>
+                                </tr>
+                                <tr class="order-good">
+                                    <td>
+                                        <div class="good">
+                                            <div class="goodPic">
+                                                <img src="images/head%20portrait.jpg">
+                                            </div>
+                                            <div class="goodInfo">
+                                                <div>
+                                                    <div class="goodName"><a href="javascript:void(0)">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">138.00</td>
+                                    <td class="amount">1</td>
+                                    <td class="goodPrice">138.00</td>
+                                </tr>
+                                <tr class="order-good">
+                                    <td>
+                                        <div class="good">
+                                            <div class="goodPic">
+                                                <img src="images/head%20portrait.jpg">
+                                            </div>
+                                            <div class="goodInfo">
+                                                <div>
+                                                    <div class="goodName"><a href="javascript:void(0)">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">138.00</td>
+                                    <td class="amount">1</td>
+                                    <td class="goodPrice">138.00</td>
+                                </tr>
+                                </tbody>
+
+                                <tbody class="hr">
+                                <tr></tr>
+                                </tbody>
+                                <tbody class="order">
+                                <tr class="order-content">
+                                    <td colspan="4">
+                                        <span class="orderID">订单ID：<span>2019020212345678</span></span>
+                                        <span class="address">收货信息：<span title="李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部">李大大 湖北省武汉市武昌区XXX科技园XXXX6栋222 湖北省 武汉市 武昌区 430000 13556666777 费用承担部门：XX公司XX部</span></span>
+                                        <span class="orderPrice">订单总价：￥<span>276.00</span></span>
+                                        <span class="orderStatus">订单状态：<span>已关闭</span></span>
+                                    </td>
+                                </tr>
+                                <tr class="order-good">
+                                    <td>
+                                        <div class="good">
+                                            <div class="goodPic">
+                                                <img src="images/head%20portrait.jpg">
+                                            </div>
+                                            <div class="goodInfo">
+                                                <div>
+                                                    <div class="goodName"><a href="javascript:void(0)">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">138.00</td>
+                                    <td class="amount">1</td>
+                                    <td class="goodPrice">138.00</td>
+                                </tr>
+                                <tr class="order-good">
+                                    <td>
+                                        <div class="good">
+                                            <div class="goodPic">
+                                                <img src="images/head%20portrait.jpg">
+                                            </div>
+                                            <div class="goodInfo">
+                                                <div>
+                                                    <div class="goodName"><a href="javascript:void(0)">得力（deli）8740 磁性钢化1000mm*1500mm悬挂式办公/会议玻璃白板</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price">138.00</td>
+                                    <td class="amount">1</td>
+                                    <td class="goodPrice">138.00</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="ordertype2" class="mui-control-content">
+                            2
+                        </div>
+                        <div id="ordertype3" class="mui-control-content">
+                            3
+                        </div>
+                        <div id="ordertype4" class="mui-control-content">
+                            4
+                        </div>
+                        <div id="ordertype5" class="mui-control-content">
+                            5
+                        </div>
+                        <div id="ordertype6" class="mui-control-content">
+                            6
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <footer class="wt_footer">
+        <a class="fa fa-home" href="../index.html"><p>首页</p></a>
+        <a class="fa fa-bars" href="../category.html"><p>分类</p></a>
+        <a class="fa fa-shopping-cart" href="../user/cart.html"><p>购物车</p></a>
+        <a class="fa fa-user now" href="../user/index.html"><p>会员中心</p></a>
+    </footer>
+</div>
+
+
+<script src="../res/zepto/zepto.min.js"></script>
+<script src="../res/bootstrap/js/bootstrap.min.js"></script>
+<script src="../res/mui/js/mui.min.js"></script>
+<script src="../res/artTemplate/template-native.js"></script>
+
+<script src="../js/common.js"></script>
+<script src="../js/user/order.js"></script>
+</body>
+</html>
