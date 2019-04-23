@@ -18,6 +18,9 @@
     top: 10px;
 }
 /*选项卡*/
+.mui-content-padded{
+    text-align: center;
+}
 .mui-control-content {
     background-color: white;
     min-height: 215px;
@@ -25,111 +28,65 @@
 .mui-control-content .mui-loading {
     margin-top: 50px;
 }
-
-.orderlist{
-    background-color: white;
-    border-radius: 4px;
-    overflow: hidden;
-    padding: 10px;
+/*订单*/
+.ohead{
+    padding: 5px;
+    font-size: 14px;
 }
-.hr tr{
-    width: 100%;
-    height: 20px;
-    background-color: white;
-}
-.orderlist thead,.order-good{
-    text-align: center;
-}
-.orderlist thead,.orderlist tbody{
+.order{
+    border: 1px solid #ccc;
+    font-size: 14px;
     margin-bottom: 10px;
 }
-.orderlist tbody.order{
-    border: 1px solid #ccc !important;
-}
-.orderlist tbody td{
-    border: none !important;
-}
-.orderlist tbody .order-content{
+.orderinfo{
     background-color: #ccc;
-}
-.orderlist tbody .order-content td>*{
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 20px;
-}
-.orderlist tbody .order-content .address{
-    max-width: 345px;
-    display: inline-block;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
-.orderlist tbody .order-content .orderPrice{
-    color: #ff6600;
-    font-weight: bold;
-    font-size: 18px;
-}
-/*商品*/
-tr.order-good td {
-    height: 80px;
-    padding: 6px;
-    line-height: 80px !important;
-    text-align: center;
-}
-
-.good {
-    overflow: hidden;
-}
-
-.good > div {
-    float: left;
-    margin-left: 30px;
-}
-
-.goodPic img {
-    vertical-align: middle;
-    height: 64px;
-}
-
-.goodInfo {
-    width: 240px;
-    height: 80px;
-    overflow: hidden;
-    line-height: 20px;
-    text-align: left;
-    padding: auto 0px;
-    margin-left: 9px;
+    padding: 5px;
     position: relative;
-    display: table;
-    margin-right: -300px;
 }
-
-.goodInfo > div {
-    display: table-cell;
-    vertical-align: middle;
+.orderinfo>*{
+    margin-right: 15px;
 }
-
-.goodName {
-    color: -webkit-link;
+.orderinfo.manage{
+    padding-right: 40px;
 }
-
-.point {
-    font-weight: bold;
+.orderinfo.manage button{
+    width: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    padding: 5px;
 }
-
-.amount input {
-    width: 27px;
-}
-
-.goodPrice {
-    font-weight: bold;
+.orderPrice{
     color: #ff6600;
+    font-weight: bold;
+    font-size: 16px;
 }
-
-.amount img {
-    cursor: pointer;
+.good>div{
+    padding: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+    font-size: 14px;
 }
-
-.amount input {
-    text-align: center;
+.good{
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    font-size: 0;
+}
+.good:last-child{
+    border: none;
+}
+.good .pic{
+    position: relative;
+}
+.good .pic img{
+    width: 100%;
+}
+.good .pic i{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 18px;
+    color: #666;
 }
